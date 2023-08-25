@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+README para Prueba Técnica Proyecto Frontend en React
+Proyecto Creado por: Carlos Yepes
+Este README proporciona instrucciones detalladas para configurar, instalar y ejecutar el proyecto frontend en React de la prueba técnica.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pasos de Configuración
+Clonar el Repositorio:
 
-## Available Scripts
+bash
+Copy code
+git clone <>
+cd nombre_del_proyecto
+Instalar Dependencias:
 
-In the project directory, you can run:
+Desde la raíz del proyecto, ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-### `npm start`
+Copy code
+npm install
+Ejecución del Proyecto
+Iniciar el Proyecto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para iniciar la aplicación en modo de desarrollo, ejecuta:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+arduino
+Copy code
+npm run start
+Manejo de Errores y Versiones
+Instalación de Dependencias Específicas:
 
-### `npm test`
+Si encuentras errores relacionados con dependencias, intenta instalar la dependencia problemática con el siguiente comando:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+mathematica
+Copy code
+npm install <nombre_de_la_dependencia> -D
+Gestión de Versiones de Node:
 
-### `npm run build`
+Si tienes problemas de compatibilidad, puedes cambiar a una versión específica de Node usando:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+perl
+Copy code
+npm use node <versión_correspondiente>
+Backend y Conexión con APIs
+Este proyecto se conecta con dos APIs: una creada por el autor y otra proporcionada. La API backend está implementada utilizando Nest.js, un framework basado en Node.js para microservicios.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Configuración del Backend
+Instalar Nest.js:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Asegúrate de tener instalado el paquete global de Nest.js con el siguiente comando:
 
-### `npm run eject`
+bash
+Copy code
+npm install -g @nestjs/cli
+Instalar Dependencias del Backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Desde la carpeta del backend, ejecuta:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Copy code
+npm install
+Iniciar el Servidor Backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+arduino
+Copy code
+npm run start:dev
+Variables de Entorno:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Crea un archivo .env en la carpeta del backend y define las siguientes variables:
 
-## Learn More
+makefile
+Copy code
+APP_PORT=3001
+DB_URI='mongodb://localhost:27017/recetasDB'
+CONNECTION_NAME= "users"
+SECRET='passwordtoken'
+Nota: No es una buena práctica incluir información sensible en un archivo README, considera manejar las variables de entorno de manera más segura.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Uso de la Base de Datos
+Para usar la base de datos en un entorno local, se requiere MongoDB. Descarga MongoDB Shell y sigue las instrucciones de instalación. Luego, ejecuta el programa y sigue los pasos para crear documentos, encriptar contraseñas y autenticarse con la base de datos.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+¡Listo! Con estas instrucciones organizadas, los usuarios podrán seguir fácilmente los pasos para configurar y ejecutar el proyecto frontend en React, así como el backend implementado con Nest.js.
