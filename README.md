@@ -7,9 +7,9 @@ Clonar el Repositorio:
 
 bash
 Copy code
-git clone <>
-cd nombre_del_proyecto
-Instalar Dependencias:
+git clone <https://github.com/carlosmontoya230/recipes_app_frontend.git>
+cd prueba-tecnicaa
+Instalar Dependencias: npm i
 
 Desde la raíz del proyecto, ejecuta el siguiente comando para instalar las dependencias necesarias:
 
@@ -20,7 +20,6 @@ Iniciar el Proyecto:
 
 Para iniciar la aplicación en modo de desarrollo, ejecuta:
 
-arduino
 Copy code
 npm run start
 Manejo de Errores y Versiones
@@ -28,7 +27,6 @@ Instalación de Dependencias Específicas:
 
 Si encuentras errores relacionados con dependencias, intenta instalar la dependencia problemática con el siguiente comando:
 
-mathematica
 Copy code
 npm install <nombre_de_la_dependencia> -D
 Gestión de Versiones de Node:
@@ -38,8 +36,17 @@ Si tienes problemas de compatibilidad, puedes cambiar a una versión específica
 perl
 Copy code
 npm use node <versión_correspondiente>
+
 Backend y Conexión con APIs
+
 Este proyecto se conecta con dos APIs: una creada por el autor y otra proporcionada. La API backend está implementada utilizando Nest.js, un framework basado en Node.js para microservicios.
+
+Clonar el Repositorio:
+
+bash
+Copy code
+git clone <https://github.com/carlosmontoya230/recipes_app_backend.git>
+cd test-backend-s4digital
 
 Configuración del Backend
 Instalar Nest.js:
@@ -57,7 +64,6 @@ Copy code
 npm install
 Iniciar el Servidor Backend:
 
-arduino
 Copy code
 npm run start:dev
 Variables de Entorno:
