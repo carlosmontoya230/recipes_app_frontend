@@ -3,11 +3,11 @@ import { Col, Row, Button, Rate, Modal } from "antd";
 import { Link } from "react-router-dom";
 import { LikeOutlined, EyeOutlined } from "@ant-design/icons";
 import { Recipe } from "../../interfaces/RecipeInterface";
-import { URL_API_BACKEND, URL_API_BACKEND_BASE } from "../../utils/constants";
+import { URL_API_BACKEND_BASE } from "../../utils/constants";
 
 export default function CardReceta(props: { recetasList: Recipe[] }) {
   const { recetasList } = props;
-  const [hovered, setHovered] = useState(0);
+  const [ , setHovered] = useState(0);
 
   const handleMouseEnter = (index: number) => {
     setHovered(index);

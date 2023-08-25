@@ -1,7 +1,6 @@
 import React from "react";
 import { Layout } from "antd";
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
   Navigate,

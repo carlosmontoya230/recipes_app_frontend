@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { Row, Col, Modal } from "antd";
 
 import "./favorite.scss";
@@ -16,6 +15,7 @@ export default function Favorite() {
 
   useEffect(() => {
     getFavorites();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getFavorites = async () => {
